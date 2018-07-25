@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b82f11-e362-4e80-866b-35b1140c7500" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ex113.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PetRock/PetRock.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PetRock/PetRock.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PetRock/PetRock.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PetRock/src/PetRock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PetRock/tests/PetRockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProject/TestProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProject/TestProject.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProject/TestProject.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestProject/src/test/Junit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rolls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ex1.3/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex1.3/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ex1.3/FixedCapacityStackOfStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex1.3/FixedCapacityStackOfStrings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ex1.3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex1.3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FixedCapacityStackOfStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FixedCapacityStackOfStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ex113.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ex113.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex113.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -49,6 +34,15 @@
                 <element signature="e#145#146#0" expanded="true" />
                 <element signature="e#165#166#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rolls.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Rolls.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -73,12 +67,13 @@
         <option value="$PROJECT_DIR$/src/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/ex113.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Rolls.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="862" />
-    <option name="y" value="161" />
+    <option name="x" value="905" />
+    <option name="y" value="160" />
     <option name="width" value="1581" />
     <option name="height" value="1157" />
   </component>
@@ -218,7 +213,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="862" y="161" width="1581" height="1157" extended-state="0" />
+    <frame x="905" y="160" width="1581" height="1157" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -402,6 +397,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex113.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -414,10 +416,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex113.java">
+    <entry file="file://$PROJECT_DIR$/src/Rolls.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="38">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
