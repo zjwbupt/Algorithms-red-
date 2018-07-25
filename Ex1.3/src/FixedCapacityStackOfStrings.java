@@ -1,9 +1,7 @@
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
+import java.io.*;
+
 
 public class FixedCapacityStackOfStrings implements Iterable<String> {
     private String[] a;  // holds the items
