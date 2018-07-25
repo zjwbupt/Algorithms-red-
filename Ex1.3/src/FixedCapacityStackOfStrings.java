@@ -39,7 +39,7 @@ public class FixedCapacityStackOfStrings implements Iterable<String> {
     }
 
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         int max = Integer.parseInt(args[0]);
         FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(max);
         while (!StdIn.isEmpty()) {
@@ -56,5 +56,5 @@ public class FixedCapacityStackOfStrings implements Iterable<String> {
             StdOut.print(s + " ");
         }
         StdOut.println();
-    }
+    }*/
 }

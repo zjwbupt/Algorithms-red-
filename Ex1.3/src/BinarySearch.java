@@ -86,7 +86,7 @@ public class BinarySearch {
      *
      * @param args the command-line arguments
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         // read the integers from a file
         In in = new In(args[0]);
@@ -101,5 +101,5 @@ public class BinarySearch {
             if (BinarySearch.indexOf(whitelist, key) == -1)
                 StdOut.println(key);
         }
-    }
+    }*/
 }
