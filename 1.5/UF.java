@@ -27,7 +27,7 @@ public class UF{
 	}
 
 	public int find(int p){
-
+		return id[p];
 	}
 	
 	public static void main(String[] args){
