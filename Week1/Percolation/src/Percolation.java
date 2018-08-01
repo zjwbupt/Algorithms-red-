@@ -1,6 +1,7 @@
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 //定义 Percolation 的数据结构
 public class Percolation {
+    private WeightedQuickUnionUF grid;
     public Percolation(int n){
     }                // create n-by-n grid, with all sites blocked
 
