@@ -1,28 +1,88 @@
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
-//定义 Percolation 的数据结构
+
+
 public class Percolation {
-    private WeightedQuickUnionUF grid;
-    public Percolation(int n){
-    }                // create n-by-n grid, with all sites blocked
+    private WeightedQuickUnionUF firstUnionFind;
+    private WeightedQuickUnionUF secondUnionFind;
+    private int row = 0;
+    private boolean[][] site;
 
-    public void open(int row, int col){
+    public Percolation(int n) // create n-by-n grid, with all sites blocked
+    {
+        if (n <= 0) {
+            throw new IllegalArgumentException();
+        }
 
-    }    // open site (row, col) if it is not open already
+        firstUnionFind = new WeightedQuickUnionUF((n * n) + 2);//带虚拟顶和虚拟底
+        secondUnionFind = new WeightedQuickUnionUF((n * n) + 1);//只有虚拟顶
+        row = n;
+        site = new boolean[n][n];//构建一个n*n的方块，叫site
+    }
 
-    public boolean isOpen(int row, int col){
-        return true;
-    }  // is site (row, col) open?
+    public void open(int i, int j) // open site (row i, column j) if it is not open already
+    {
+        if ((i < 1) || (i > row) || (j < 1) || (j > row)) {
+            throw new IndexOutOfBoundsException();
+        }
+        site[i - 1][j - 1] = true;
+        int self = (((i - 1) * row) + j) - 1; //算出自己的序号
+        int up = self - row;
+        int down = self + row;
+        int left = self - 1;
+        int right = self + 1;
 
-    public boolean isFull(int row, int col){
-        return true;
-    }  // is site (row, col) full?
+        if (i == 1) {
+            firstUnionFind.union(row * row, self);//把open的点（self）和row*row连接起来
+            secondUnionFind.union(row * row, self);
+        }
+        if (i == row) {
+            firstUnionFind.union(row * row+1, self);
+        }
 
-    public int numberOfOpenSites(){
+        if ((i != 1) && isOpen(i - 1, j)) {
+            firstUnionFind.union(up, self);
+            secondUnionFind.union(up, self);
+        }
 
-    }       // number of open sites
+        if ((i != row) && isOpen(i + 1, j)) {
+            firstUnionFind.union(down, self);
+            secondUnionFind.union(down, self);
+        }
 
-    public boolean percolates(){
-        return true;
-    }              // does the system percolate?
+        if ((j != 1) && isOpen(i, j - 1)) {
+            firstUnionFind.union(left, self);
+            secondUnionFind.union(left, self);
+        }
 
+        if ((j != row) && isOpen(i, j + 1)) {
+            firstUnionFind.union(right, self);
+            secondUnionFind.union(right, self);
+        }
+    }
+
+    public boolean isOpen(int i, int j) // is site (row i, column j) open?
+    {
+        if ((i < 1) || (i > row) || (j < 1) || (j > row)) {
+            throw new IndexOutOfBoundsException();
+        }
+        return site[i - 1][j - 1];
+    }
+
+    public boolean isFull(int i, int j) // is site (row i, column j) full?
+    {
+        if ((i < 1) || (i > row) || (j < 1) || (j > row)) {
+            throw new IndexOutOfBoundsException();
+        }
+        int self = (((i - 1) * row) + j) - 1;
+        return secondUnionFind.connected(row * row, self);
+    }
+
+    public boolean percolates() // does the system percolate?
+    {
+        return firstUnionFind.connected(row * row + 1, row * row);
+    }
+
+    public static void main(String[] args) // test client (optional)
+    {
+    }
 }
